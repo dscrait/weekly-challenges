@@ -41,6 +41,8 @@ touch wallpaperChanger.py
 ```terminal
   git add .
   git commit -m "<your_commit_message>"
+  
+  # If so try to use conventional commit messages using the guide: https://www.conventionalcommits.org/en/v1.0.0/
 ```
 
 **9.** Push your local branch to the remote repository.
@@ -48,4 +50,4 @@ touch wallpaperChanger.py
 git push 
 ```
 
-**10.** Create a Pull Request!
+**9.** Create a Pull Request! 

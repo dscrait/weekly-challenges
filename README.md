@@ -24,19 +24,27 @@ cd week-3
 ```terminal
 git checkout -b <your_branch_name>
 ```
+**6.** Make a new directory with your Full_Name.
+```terminal
+mkdir FirstName_LastName
+```
+**6.1** Create a file wallpaperChanger.py
+```terminal
+touch wallpaperChanger.py
+```
 
-**6.** Follow the instructions in the challenge README and make changes in source code.
+**7.** Follow the instructions in the challenge README and make changes in source code.
 
-**7.** Commit your changes.
+**8.** Commit your changes.
 
 ```terminal
   git add .
   git commit -m "<your_commit_message>"
 ```
 
-**8.** Push your local branch to the remote repository.
+**9.** Push your local branch to the remote repository.
 ```terminal
 git push 
 ```
 
-**9.** Create a Pull Request!
+**10.** Create a Pull Request!

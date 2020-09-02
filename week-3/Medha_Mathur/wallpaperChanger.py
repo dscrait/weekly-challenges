@@ -1,9 +1,17 @@
 import struct
 import ctypes
+import os
+from datetime import datetime
 
+folder = os.path.dirname(os.path.abspath('wallpaper.jpg'))
+
+image_files = []
+for r, d, f in os.walk(folder):
+    for file in f:
+        if '.jpg' in file:
+            image_files.append(os.path.join(r, file))
 
 SPI_SETDESKWALLPAPER = 20
-WALLPAPER_PATH = 'C:\\Users\LENOVO\Desktop\weekly-challenges\week-3\Medha_Mathur\wallpaper.jpg'
 
 
 def is_64_windows():
@@ -21,5 +29,15 @@ def change_wallpaper():
     if not r:
         print(ctypes.WinError())
 
+now = datetime.now()
 
-change_wallpaper()
+today11am = now.replace(hour=2, minute=0, second=10, microsecond=0)
+today9pm = now.replace(hour=21, minute=0, second=0, microsecond=0)
+
+WALLPAPER_PATH=""
+if __name__=="__main__":
+    if now>today11am and now<today9pm:
+        WALLPAPER_PATH = image_files[0]
+    else:
+        WALLPAPER_PATH = image_files[1]
+    change_wallpaper()

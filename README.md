@@ -25,9 +25,18 @@ cd week-3
 git checkout -b <your_branch_name>
 ```
 
-**6.** Follow the instructions in the challenge README and make changes in source code.
+**6.** Make a new directory with your Full_Name.
+```terminal
+mkdir FirstName_LastName
+```
+**6.1** Create a file wallpaperChanger.py
+```terminal
+touch wallpaperChanger.py
+```
 
-**7.** Commit your changes.
+**7.** Follow the instructions in the challenge README and make changes in source code.
+
+**8.** Commit your changes.
 
 ```terminal
   git add .
@@ -36,7 +45,7 @@ git checkout -b <your_branch_name>
   # If so try to use conventional commit messages using the guide: https://www.conventionalcommits.org/en/v1.0.0/
 ```
 
-**8.** Push your local branch to the remote repository.
+**9.** Push your local branch to the remote repository.
 ```terminal
 git push 
 ```

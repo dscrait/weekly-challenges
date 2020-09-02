@@ -36,8 +36,9 @@ today9pm = now.replace(hour=21, minute=0, second=0, microsecond=0)
 
 WALLPAPER_PATH=""
 if __name__=="__main__":
-    if now>today11am and now<today9pm:
-        WALLPAPER_PATH = image_files[0]
-    else:
-        WALLPAPER_PATH = image_files[1]
+    for i in range(len(image_files)-1):
+        if now>today11am and now<today9pm:
+            WALLPAPER_PATH = image_files[i]
+        else:
+            WALLPAPER_PATH = image_files[i+1]
     change_wallpaper()

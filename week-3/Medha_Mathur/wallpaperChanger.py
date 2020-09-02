@@ -31,7 +31,7 @@ def change_wallpaper():
 
 now = datetime.now()
 
-today11am = now.replace(hour=2, minute=0, second=10, microsecond=0)
+today11am = now.replace(hour=11, minute=0, second=0, microsecond=0)
 today9pm = now.replace(hour=21, minute=0, second=0, microsecond=0)
 
 WALLPAPER_PATH=""

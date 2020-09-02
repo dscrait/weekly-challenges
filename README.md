@@ -36,6 +36,14 @@ touch wallpaperChanger.py
 
 **7.** Follow the instructions in the challenge README and make changes in source code.
 
+**7.1.** Before commiting your changes add the following commands on your terminal
+```terminal 
+git remote add upstream https://github.com/dscrait/weekly-challenges.git
+```
+```terminal
+git pull upstream master
+```
+
 **8.** Commit your changes.
 
 ```terminal

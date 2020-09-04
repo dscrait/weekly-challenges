@@ -4,7 +4,7 @@ import struct
 import random
 
 def wallpapercahange_api():
-    """Check if 64 bit Windows OS"""
+    """Check for 64 bit or 32 bit Windows OS"""
     if struct.calcsize('P') * 8 == 64:
         return ctypes.windll.user32.SystemParametersInfoW
     else:
@@ -14,11 +14,16 @@ def wallpapercahange_api():
 def change():
     DIR = os.getcwd()
     SPI_SETDESKWALLPAPER = 20
+    #getting images from wallpapers folder
     images = [i for i in os.listdir("wallpapers") if i.lower().endswith(('.png', '.jpg', '.jpeg','.bmp'))]
+
+    #creating/opening log file
     try:
         f = open("wallpaper.log","r+")
     except Exception:
         f = open("wallpaper.log","w+")
+    
+    #select random image
     selected = random.choice(images)
     current = f.read()
     print("current= "+current)
@@ -30,9 +35,9 @@ def change():
     f.close()
     print("selected= "+selected)
     imagepath = DIR+"\\wallpapers\\"+selected
-    #print(imagepath)
+
+    #changing wallpaper
     api = wallpapercahange_api()
     api(SPI_SETDESKWALLPAPER, 0, imagepath, 3)
-    
 
 change()

@@ -33,13 +33,36 @@ mkdir FirstName_LastName
 touch wallpaperChanger.py
 ```
 
+<<<<<<< HEAD
 **7.** Follow the instructions in the challenge README and make changes in source code.
+=======
+**6.** Make a new directory with your Full_Name.
+```terminal
+mkdir FirstName_LastName
+```
+**6.1** Create a file wallpaperChanger.py
+```terminal
+touch wallpaperChanger.py
+```
+
+**7.** Follow the instructions in the challenge README and make changes in source code.
+
+**7.1.** Before commiting your changes add the following commands on your terminal
+```terminal 
+git remote add upstream https://github.com/dscrait/weekly-challenges.git
+```
+```terminal
+git pull upstream master
+```
+>>>>>>> 6a558716b31ecf800ed56779bb09cb7e12fba9f9
 
 **8.** Commit your changes.
 
 ```terminal
   git add .
   git commit -m "<your_commit_message>"
+  
+  # If so try to use conventional commit messages using the guide: https://www.conventionalcommits.org/en/v1.0.0/
 ```
 
 **9.** Push your local branch to the remote repository.
@@ -47,4 +70,8 @@ touch wallpaperChanger.py
 git push 
 ```
 
+<<<<<<< HEAD
 **10.** Create a Pull Request!
+=======
+**9.** Create a Pull Request! 
+>>>>>>> 6a558716b31ecf800ed56779bb09cb7e12fba9f9

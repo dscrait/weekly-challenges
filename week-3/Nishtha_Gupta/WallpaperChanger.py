@@ -16,5 +16,5 @@ while choice == 1:
     setImage(imgname)
     print('The desktop image will change to the default choice in 5secs')
     time.sleep(5)
-    setImage('d88uov4-5ab6b0b7-41ef-444f-9685-d5eb48d3a2fb.png')
+    setImage('w4.png')
     choice = int(input('Do you want to change the background again?(0-no/1-yes): '))

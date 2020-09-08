@@ -8,8 +8,9 @@ import random
 #Adding all image paths from folder into a list.
 def get_images():
     image_files = []
-    
-    with os.scandir(os.getcwd()) as f:
+
+    path = os.path.join(os.getcwd(),'wallpapers')
+    with os.scandir(path) as f:
         for file in f:
             if '.jpg' in file.name:
                 image_files.append(os.path.join(os.getcwd(),file))
@@ -40,7 +41,7 @@ if __name__=="__main__":
     
     image_files = get_images()
     random.shuffle(image_files)
-    if(now==today10am):
+    if(today10am==now):
         WALLPAPER_PATH = image_files[1]
     
     change_wallpaper()

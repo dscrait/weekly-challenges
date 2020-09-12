@@ -15,7 +15,6 @@ def get_images():
 images = get_images()
 
 w1 = random.choice(images)
-print(w1)
 
 if(today10pm<now):
     ctypes.windll.user32.SystemParametersInfoW(20, 0, w1, 0)

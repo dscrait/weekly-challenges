@@ -58,4 +58,4 @@ git pull upstream master
 git push 
 ```
 
-**9.** Create a Pull Request! 
+**9.** Create a Pull Request!
